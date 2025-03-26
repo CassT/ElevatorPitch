@@ -1,6 +1,7 @@
 #ifndef ELEVATOR_H
 #define ELEVATOR_H
 #include <vector>
+#include <string>
 
 constexpr int DEFAULT_FLOOR_TRAVEL_TIME { 10 };
 
@@ -14,7 +15,8 @@ private:
 public:
     Elevator(int initialFloor, int initialFloorTravelTime = DEFAULT_FLOOR_TRAVEL_TIME);
     void travelToFloor(int destinationFloor);
-    void printTravelTime();
-    void printTraversedFloors();
+    int getTotalTravelTime();
+    std::string getPrintedListOfFloors();
 };
+
 #endif

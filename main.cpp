@@ -1,4 +1,5 @@
 #include "elevator.h"
+#include <iostream>
 #include <sstream>
 
 using namespace std;
@@ -14,7 +15,7 @@ int main(int argc, char* argv[])
             ss.ignore();
         }
     }
-    elevator.printTravelTime();
-    elevator.printTraversedFloors();
+    cout << "Total travel time: " << elevator.getTotalTravelTime() << endl;
+    cout << "Visited floors: " << elevator.getPrintedListOfFloors() << endl;
     return 0;
 }
