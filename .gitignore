@@ -36,3 +36,6 @@
 
 #dSYM
 *.dSYM/**
+
+#binaries
+main
